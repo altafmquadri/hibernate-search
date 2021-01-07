@@ -12,7 +12,9 @@ import org.springframework.stereotype.Service;
 import com.test.dao.UserDAO;
 import com.test.model.User;
 
-@Component
+//@Component
+@Service
+@Transactional
 public class UserServiceImpl implements UserService {
 
 	@Autowired
@@ -20,36 +22,29 @@ public class UserServiceImpl implements UserService {
 
 	
 	@Override
-	@Transactional
 	public void addUser(User user) {
 		uD.addUser(user);
 	}
 
 	@Override
-	@Transactional
 	public List<User> getAllUsers() {
 		return uD.getAllUsers();
 	}
 
-
 	@Override
-	@Transactional
-	public User updateUser(User user) {
-
-		return uD.updateUser(user);
-	}
-	
-	@Override
-	@Transactional
 	public void deleteUser(Integer id) {
 		uD.deleteUser(id);
 	}
 
 	@Override
-	@Transactional
 	public User getUserById(Integer id) {
 		System.out.println("i am in getuserbyid");
 		return uD.getUserById(id);
+	}
+
+	@Override
+	public void change(User user) {
+		uD.change(user);
 	}
 
 }

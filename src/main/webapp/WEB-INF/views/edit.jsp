@@ -1,10 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"
     %>
-<%@page import= "com.test.model.User" %>
-
-<% User user = (User) request.getAttribute("user"); %>    
-
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,9 +10,10 @@
 </head>
 <body>
 	<form method="post" action="/edit">
-		Id: <input type="text" name="id" value=${user.getId()}>
-		Name: <input type="text" name="name" placeholder=${user.getName()}>
-		<button type="submit">Edit</button> 
+		Id: <input type="text" name="id" value=${user.getId()} readonly="readonly">
+		Name: <input type="text" name="name" value=${user.getName()}>
+		<button type="submit">Save</button> 
+		<button>Cancel</button> 
 	</form>
 </body>
 </html>
