@@ -1,8 +1,8 @@
-package com.test.dao;
+package com.search.dao;
 
 import java.util.List;
 
-import com.test.model.User;
+import com.search.model.User;
 
 public interface UserDAO {
 

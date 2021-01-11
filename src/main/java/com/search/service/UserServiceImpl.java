@@ -1,18 +1,15 @@
-package com.test.service;
+package com.search.service;
 
 import java.util.List;
 
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import com.search.dao.UserDAO;
+import com.search.model.User;
 
-import com.test.dao.UserDAO;
-import com.test.model.User;
-
-//@Component
 @Service
 @Transactional
 public class UserServiceImpl implements UserService {

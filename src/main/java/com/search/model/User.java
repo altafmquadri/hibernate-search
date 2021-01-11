@@ -1,4 +1,4 @@
-package com.test.model;
+package com.search.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

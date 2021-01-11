@@ -1,4 +1,4 @@
-package com.test.dao;
+package com.search.dao;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.test.model.User;
+import com.search.model.User;
 
 @Repository
 public class UserDAOImpl implements UserDAO {

@@ -1,8 +1,8 @@
-package com.test.service;
+package com.search.service;
 
 import java.util.List;
 
-import com.test.model.User;
+import com.search.model.User;
 
 public interface UserService {
 
